@@ -1,0 +1,147 @@
+body{
+    background-color: #e9eaee
+}
+body > header{
+    background-color:  #00ca84;
+    border-bottom: #00bc80 2px solid;
+    padding-left: 50px;
+    padding-right: 50px;
+    height: 60px
+}
+.nav_bar{
+    padding-top: 20px
+}
+.nav_bar .nav_bar_item{
+    display: inline-block;
+}
+.nav_bar .nav_bar_item + .nav_bar_item{
+    margin-left: 35px
+}
+.nav_bar .nav_bar_item .label a{
+    color: white;
+    font-family: oswald,sans-serif;
+    font-style: normal;
+    font-size: 15px;
+    font-weight: bold
+}
+body > header .links_nav{
+    padding-top: 10px
+}
+body > header .links_nav input{
+    border: none;
+    height: 40px;
+    border-radius: 100px;
+    cursor: pointer
+}
+body > header .links_nav input[class=active]{
+    background-color: white;
+    color: #00bc80;
+}
+body > header .links_nav input[class=disable]{
+    background-color: #00bc80;
+    color: white;
+}
+body > header .links_nav input{
+    padding-left: 25px;
+    padding-right: 25px
+}
+.form_login{
+    margin-top: 80px
+}
+.form_login > div[class*=col-]{
+    position: relative;
+    padding: 0px;
+    background-color: white;
+    height: 550px
+}
+.form_login header{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 250px;
+    background-color: #00c3cc;
+}
+.form_login section form{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 120px;
+    width: 100%;
+    padding-left: 35px;
+    padding-right: 35px
+}
+.form_login section form > div{
+    height: 380px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.1);
+    background-color: white;
+    padding: 35px
+}
+.form_login section form .input-group{
+    width: 100%;
+    height: 50px;
+    padding: 2px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.1);
+    border-radius: 5px
+}
+.form_login section form .input-group .form-control, 
+.form_login section form .input-group .input-group-text
+{
+    background-color: white;
+    border: none;
+    height: 50px
+}
+.form_login section form .input-group .input-group-text img{
+    width: 25px;
+    height: 25px;
+    display: block;
+    margin: auto
+}
+.form_login section form input[type=submit]{
+    background-color: #00c3cc;
+    border-radius: 10px;
+    color: white;
+    font-weight: bolder;
+    display: block;
+    margin: auto;
+    height: 60px;
+    width: 70px
+}
+.menu_icon{
+    display: none;
+    padding-top: 15px
+}
+.menu_icon img{
+    width: 35px;
+    height: 35px;
+}
+@media(max-width: 900px){
+    .nav_bar{
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        width: 100%;
+        background-color: #00bc80;
+        z-index: 5000;
+        padding-bottom: 25px;
+        display: none
+    }
+    .nav_bar .nav_bar_item{
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin-top: 25px
+    }
+    .nav_bar .nav_bar_item + .nav_bar_item{
+        margin-left: 0px
+    }
+    .menu_icon{
+        display: inline-block
+    }
+    body > header{
+        padding-left: 15px;
+        padding-right: 15px
+    }
+}
